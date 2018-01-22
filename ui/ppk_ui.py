@@ -1,3 +1,5 @@
+import PyQt5 as Qt
+import pyqtgraph as pg
 from pyqtgraph.Qt import QtCore, QtGui
 
 class ShowInfoWindow(QtCore.QThread):

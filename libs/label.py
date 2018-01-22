@@ -1,4 +1,6 @@
-from PySide import QtCore, QtGui
+import PyQt5 as Qt
+import pyqtgraph as pg
+from pyqtgraph.Qt import QtCore, QtGui
 
 class EditableLabel(QtGui.QLabel):
     ''' Custom label class, inherited from QLabel. Double clicking it with let you edit the value of it.

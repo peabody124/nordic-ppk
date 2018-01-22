@@ -1,3 +1,5 @@
+import PyQt5 as Qt
+import pyqtgraph as pg
 from pyqtgraph.Qt import QtCore, QtGui
 from libs.label import EditableLabel
 from libs.rtt import RTT_COMMANDS
@@ -163,12 +165,12 @@ class SettingsWindow(QtCore.QObject):
         aboutAction = QtGui.QAction("About", self,
                                     triggered=self.menuActionAbout)
 
-        aboutQtAction = QtGui.QAction("About &Qt", self)
-        aboutQtAction.triggered.connect(QtGui.qApp.aboutQt)
+        #aboutQtAction = QtGui.QAction("About &Qt", self)
+        #aboutQtAction.triggered.connect(QtGui.qApp.aboutQt)
 
         self.settings_mainw.helpMenu.addAction(userGuideAction)
         self.settings_mainw.helpMenu.addAction(aboutAction)
-        self.settings_mainw.helpMenu.addAction(aboutQtAction)
+        #self.settings_mainw.helpMenu.addAction(aboutQtAction)
 
         ''' Add items to Logging menu '''
         self.loggingAction = QtGui.QAction("Start logging", self, shortcut="Ctrl+L",
